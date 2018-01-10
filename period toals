@@ -1,0 +1,7 @@
+ SELECT count(*) as Count, 'Documents' As Type, 'Consolidated' As Period  
+ FROM documents  
+ WHERE date_create between '4/1/2017' AND '4/10/2017'  
+ UNION ALL  
+ SELECT count(*) as Count, 'Folders' As Type, 'Consolidated' As Period  
+ FROM folders  
+ WHERE date_create between '4/1/2017' AND '4/10/2017'
